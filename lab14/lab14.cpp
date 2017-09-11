@@ -1,6 +1,8 @@
 //Created By: Corey McDonough
 //Created On: 8/30/2017
-
+//A change amount is inputted. It then calculates the most efficient change 
+//value and states the amount of money in dollars and cents. A fee is deducted
+//and then it says the amount of money given back.
 
  #include <iostream>
  #include <iomanip> // this allows the use of "setprecision"
