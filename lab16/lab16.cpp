@@ -7,7 +7,7 @@
  using namespace std;
  
      // Struct variables for each stock
-     struct stock_info{
+     struct StockInfo{
          string stock_name;
          char stock_sector;
          double share_price;
@@ -16,10 +16,10 @@
          
      };
      // each of these are a different object
-     stock_info stock1;
-     stock_info stock2;
-     stock_info stock3;
-     stock_info stock4;
+     StockInfo stock1;
+     StockInfo stock2;
+     StockInfo stock3;
+     StockInfo stock4;
      
       int main()
  {
@@ -51,6 +51,7 @@
      cout << stock4.stock_name << "        " << stock4.number_shares << "        " << stock4.share_price << "        " << stock4.total_value << endl;
      
      cout << "Total Portfolio: $" << total_portfolio;
+ }
      
      /* 
      Output:
@@ -68,4 +69,4 @@ Hershey        42        1337        56154
 Total Portfolio: $77155.1
      
      
- }
+ */ 
