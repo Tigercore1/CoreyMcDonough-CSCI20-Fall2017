@@ -1,6 +1,7 @@
 //Created By: Corey McDonough
 //Created On: 9/12/2017
-//This program will take inputs regarding people's health and calculate the number of calories they must consume in a day and their BMI. It will also calculate how many snickers bars they have to eat in a day and output all this information.
+//This program will take inputs regarding people's health and calculate the number of calories they must consume in a day and their BMI.
+//It will also calculate how many snickers bars they have to eat in a day and output all this information.
 
 #include <iostream>
 #include <string> 
