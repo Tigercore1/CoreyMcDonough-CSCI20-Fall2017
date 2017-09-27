@@ -13,7 +13,6 @@ void RandomNumber(){ //function name
     int random_number = rand() % 100 + 1; //selects a random number from 1-100
 
     cout << "Your random number is " << random_number << "."; //output
-
 }
 
 int main(){
