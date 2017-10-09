@@ -1,0 +1,22 @@
+//Created By: Corey McDonough
+//Created On: 10/3/2017
+
+CLASS INFO:
+create a class called "book".
+the book will have 7 public functions.
+Create a set function for each bit of information we want stored. (title, author, copyright year)
+Create a get function for each bit of information we want stored as well.
+The last function will be a print function for all of the stored info.
+The next part of the class will have private variables.
+There will be a variable for each info. (Title, author, copyright year. Title and author will be strings. Year will be int.)
+
+The main will create 5 objects for each of the five books.
+
+INPUT:
+Next we need inputs for all of the book info that we want stored. This will also have outputs directing what to put in.
+
+FUNCTION CALLS:
+We will take the inputs as variables and then run them in the class functions to store them.
+
+OUTPUT:
+After all 5 of the books are stored, we will run the class print function to get all of the book data outputted.
