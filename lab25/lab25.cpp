@@ -1,14 +1,17 @@
 //Created By: Corey McDonough
 //Created On: 10/3/2017
-//
+//This program takes info regarding books and stores them in a class. It then outputs the class through print functions in the class.
 
 #include <iostream>
 #include <string>
 using namespace std;
 
+
+// Class book has Set functions that store information about book objects. It has a get that then can return the info, 
+// and it has a print function that shows all the information about the books stored.
 class Book{
     public:
-        void SetTitle(string title){
+        void SetTitle(string title){ 
             title_ = title;
         }
         void SetAuthor(string author){
@@ -49,10 +52,11 @@ main(){
     Book book4;
     Book book5;
     
-    string tit;
+    string tit; //temporary variables that store function outputs.
     string aut;
     int yea = 0;
     
+    // Inputs
     cout << "BOOK 1" << endl << "---------------------" << endl; 
     cout << "Enter book title: ";
     cin >> tit;
@@ -113,6 +117,7 @@ main(){
     book5.SetYear(yea);
     cout << endl;
     
+    //Outputs
     cout << "ALL BOOKS" << endl << "---------------------" << endl;
     book1.Print();
     book2.Print();
