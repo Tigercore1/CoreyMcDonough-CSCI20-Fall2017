@@ -6,8 +6,16 @@
  
  int main()
  {
-     long long hi = 1.337;
-     cout << hi;
+     double c = 0;
+     double g = 0;
+     
+     
+     cin >> c;
+     g = c / 6;
+     cout << g;
+     
+     
+     
  }
  
  
@@ -29,7 +37,7 @@
  A variable is a location in memory that stores a value.
  A parameter is a variable that a function is expecting. (function input)
  An argument is the actual value being sent to the function.
- 
+ A condition is anything that evaluates true or false
  
  
  */ 
