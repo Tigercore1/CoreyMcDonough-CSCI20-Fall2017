@@ -45,7 +45,7 @@ class Book{
     
 };
 
-main(){
+int main(){
     Book book1;
     Book book2;
     Book book3;
