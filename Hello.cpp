@@ -1,20 +1,19 @@
 //Created By: April Browne
 //Created On: 8/22/2016
  
- #include <iostream>
- using namespace std;//preprocessor directives
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <math.h>
+ using namespace std;
  
  int main()
  {
-     double c = 0;
-     double g = 0;
+  int random = 0;
+    srand(time(0));
+    random = rand() % 4;
      
-     
-     cin >> c;
-     g = c / 6;
-     cout << g;
-     
-     
+     cout << random;
      
  }
  
