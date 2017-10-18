@@ -1,44 +1,36 @@
-//revised by: Corey McDonough
-//revised on: 10/2/17
-
 #include <iostream>
 using namespace std;
 
-/*  This class Salary stores data for annual salary. It can be set, retrieved, and printed out. */
-class Salary
+int main()
 {
-    private: 
-        double annual_; //data field
-    public:
-        void SetAnnualSalary(double salary) //mutator function
-        {
-            annual_ = salary;
-        }
-        double GetAnnualSalary() //accessor function
-        {
-            return annual_;
-        }
-        void Print()
-        {
-             cout<<"$"<<annual_<<endl;
-        }
-};
-int main(){
-    Salary edgar;
-    edgar.SetAnnualSalary(200);
+    int number = 1; //the problem was the int number was 12, which is larger than 10, so it never ran. This is the variable used in the while.
+    // this loop outputs the numbers 1-10. It starts at 1 and outputs it. Then it adds a 1 onto the number and runs it again until number=10.
+    while (number<=10) //number<= 10 is the condition.
+    {
+        cout<<number;
+        number = number + 1; //this is the change of the condition variable.
+    }
     
-    edgar.GetAnnualSalary();
+    int userNumber = 0, x = 1; //initial variable value
+    //inputs for numbers
+    cout<<" Enter a number: ";
+    cin>>userNumber; 
     
-    edgar.Print();
-  
-  
+    while(x <= number) //condition
+    {
+        if (x%10 == 0)
+        {
+            cout<<x<<endl;;
+        }
+        else
+        {
+            cout<<x<<" ";
+        }
+        x++; //change of variable
+    }
 }
 
-
-
-//Comment the class per the class style guide
-//Identify the following parts of the class
-//      data field
-//      mutator function
-//      accessor function
-//Create a main function that creates an object and runs all of the functions in order
+//The first loop doesn't work.  It should print the nubers from 1 to 10 but it doesn't.
+//Identify and correct the problem.
+//Comment the code as the pseudocode
+//Identify the different parts of the loop.
