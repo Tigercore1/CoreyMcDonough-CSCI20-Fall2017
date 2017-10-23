@@ -38,7 +38,10 @@
  An argument is the actual value being sent to the function.
  A condition is anything that evaluates true or false
  
- 
+git add lab33
+git commit -a -m 'Lab3.3 submission'
+git push
+
  */ 
  
  
