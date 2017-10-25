@@ -1,41 +1,58 @@
 #include <iostream>
 using namespace std;
 
-int main()
+
+
+class Salary //Class salary stores annual amount of money and has appropriate mutator functions that take inputs of salary. This is stored as annual_ in the class.
 {
-    int number = 0, product = 0;
-    while (number >=0)
-    {
-        for (int i = 0; i<3; i++)
-        { 
-            product = number * i;
+    private: 
+        double annual_;
+    public:
+        Salary() //constructor
+        {
+            annual_ = 0;
         }
-        cout<<"Please enter a positive integer: ";
-        cin >> number;
-    }
-    cout<<"The product is: "<<product<<endl;
+        Salary(double salary){ //overloaded constructor
+            annual_ = salary;   
+        }
+        void SetAnnualSalary(double salary) //sets argument salary to annual_ if the salary is above 0.
+        {
+            if (salary > 0){
+                annual_ = salary;
+            }
+            else
+                annual_ = 0;
+        }
+        double GetAnnualSalary() //gets annual_
+        {
+            return annual_;
+        }
+        void Print() //outputs annual_
+        {
+             cout<<"$"<<annual_<<endl;
+        }
+};
+
+int main(){
+    Salary None;
+    Salary Negative(-2);
+    Salary Appropriate(5);
+    
+    None.Print();
+    Negative.Print();
+    Appropriate.Print();
+        
+        
+        
+        
+        
 }
-
-//Comment the code as pseudocode
-//Determine how many times each loop executes if the numbers input are 5, 4, 3, 2, 1,-1
-//What is the value of i at the end of the program?
-
-/*
-while input number is greater than 0...
-product = number * 0
-product = number * 1
-product = number * 2
-it then asks for another input number.
-If the number is greater than 0...
-product = number * 2
-it then asks for another input.
-if the number is greater than 0...
-product = number * 2
-This repeats.
-Once a negative number is inputted, the loops ends, and the product is outputted.
-product = number * 2.
-
-for loop executes 15 times.  
-while loop executes 6 times.
-i = 3
-*/
+//Comment the class per the class style guide
+//Identify the following parts of the class
+//      constructor
+//      overload the constructor to accept an input for salary 
+//      and set the salary to the input
+//Create a main function that creates an object with no input
+//  creates an object with input that is negative
+//  and creates an object with input that is appropriate.
+//and outputs the salary for each object.

@@ -1,6 +1,6 @@
 //Revised By: Corey McDonough
 //Revised On: 10/23/17
-//Sum of numbers 
+//Sum Of Numbers 
 //Write a program that reads in positive integers from the user, each separated by a space, and the whole terminated by a negative number (e.g. 3 22 10 -2),and 
 //outputs the sum of the numbers entered (notincluding the terminated negative number!).
 #include <iostream>
@@ -9,7 +9,7 @@ int main(){
     // initialization
     int num;
     int sum=0;
-    cout << "Enter numbers separated by spaces"             << " and terminated with a negative number." << endl;
+    cout << "Enter numbers separated by spaces" << " and terminated with a negative number." << endl;
     // read first number
     cin >> num;
     

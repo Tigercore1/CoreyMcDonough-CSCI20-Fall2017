@@ -42,6 +42,15 @@ git add lab33
 git commit -a -m 'Lab3.3 submission'
 git push
 
+Procedural
+Functional
+Object Oriented
+Event
+Logical
+Multi
+
+C++ is all but logical
+
  */ 
  
  
