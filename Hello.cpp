@@ -9,12 +9,18 @@
  
  int main()
  {
-  int random = 0;
+  /*int random = 0;
     srand(time(0));
     random = rand() % 4;
      
      cout << random;
-     
+    */
+    
+    int i = 0;
+    for (i = 0; i <= 3; i++){
+	    cout << "Hello!" << endl;
+    }
+
  }
  
  
