@@ -16,10 +16,8 @@
      cout << random;
     */
     
-    int i = 0;
-    for (i = 0; i <= 3; i++){
-	    cout << "Hello!" << endl;
-    }
+    int x = 5, y=7, z=-10;
+    cout << ((y<=x) && (z<=y));
 
  }
  
@@ -58,5 +56,11 @@ Multi
 C++ is all but logical
 
  */ 
+ 
+ //Created By: April Browne
+ //Created On: 8/22/2016
+
+     
+     
  
  
