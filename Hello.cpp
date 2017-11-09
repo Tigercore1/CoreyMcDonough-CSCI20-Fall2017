@@ -1,6 +1,3 @@
-//Created By: April Browne
-//Created On: 8/22/2016
- 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -15,9 +12,7 @@
      
      cout << random;
     */
-    
-    int x = 5, y=7, z=-10;
-    cout << ((y<=x) && (z<=y));
+
 
  }
  
@@ -42,9 +37,6 @@
  An argument is the actual value being sent to the function.
  A condition is anything that evaluates true or false
  
-git add lab33
-git commit -a -m 'Lab3.3 submission'
-git push
 
 Procedural
 Functional

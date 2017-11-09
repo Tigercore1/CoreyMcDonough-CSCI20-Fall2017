@@ -1,56 +1,50 @@
-//Created By: April Browne
-//Revised By: Corey McDonough
- //Revised on: 9/11/2017
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+char mystring[20] = "my test string"; //This should copy mystring to mystring2. It does not do this.
+char mystring2[20] = mystring;
+
+
+char myString3[15] = "my test string"; //This should test if myString3 is equivalent to "my test string". You have to compare them one by one.
+if (myString3 == "my test string")
+{
+   cout<<"The same"<<endl;
+}
+
  
- #include <iostream>
- using namespace std;
- 
- struct monster{
-  string head;
-  string eyes;
-  string ears;
-  string mouth;
-  string nose;
- };
- 
- int main()
- {
-   monster monsterA;
-   monsterA.head = "Zombus";
-   monsterA.eyes = "Vegitas";
-   monsterA.ears = "Wackus";
-   monsterA.nose = "Vegitas";
-   monsterA.mouth = "Wackus";
-   
-   monster monsterB;
-   monsterB.head = "Happy";
-   monsterB.eyes = "Wackus";
-   monsterB.ears = "Vegitas";
-   monsterB.nose = "Vegitas";
-   monsterB.mouth = "Spritem";
-   
-   cout<<"Monster A~" << endl;
-   cout<<"Head:"<<monsterA.head<<endl;
-   cout<<"Eyes:"<<monsterA.eyes<<endl;
-   cout<<"Ears:"<<monsterA.ears<<endl;
-   cout<<"Nose:"<<monsterA.nose<<endl;
-   cout<<"Mouth:"<<monsterA.mouth<<endl;
-   
-   cout<< "Monster B~" << endl;
-   cout<<"Head:"<<monsterB.head<<endl;
-   cout<<"Eyes:"<<monsterB.eyes<<endl;
-   cout<<"Ears:"<<monsterB.ears<<endl;
-   cout<<"Nose:"<<monsterB.nose<<endl;
-   cout<<"Mouth:"<<monsterB.mouth<<endl;
-     
- }
- 
- /* 
- Important:
- 2) A struct is not a variable or an object.
- 1) Structs must have a ";" after the final "}"
- 
- Questions:
- 1) Can we use structs to do calculations?
- 2) What happens if we make an input into a struct, but one of the attributes is left blank and then latter that blank is outputted?
- */ 
+char myString4[20] = "my test string"; //This is supposed to count the number of spaces in the char array, but it's stuck in a loop. I made it not loop and cout.
+int i = 0; 
+int spaceCount = 0;
+while (i < 20)
+{
+   if (myString4[i] == ' ')
+   {
+        spaceCount++;
+   }
+i++;
+}
+cout <<spaceCount;
+
+
+
+char myString5[2] = "my test string"; //We're trying to cut the string. It doesn't work.
+int i = 0;
+while (myString5[i] != '\0')
+{
+   cout<<myString5[i];
+   i++;
+}
+
+
+
+
+char myString6[20] = "my test string"; //This adds an exclamation mark to the 15th char in the array. It then outputs it. It works. It might not work on a different compiler.
+myString6[14] = '!';
+cout<<myString6<<endl;
+}
+
+//run the code
+//what should each of these do?  Do they do them?
