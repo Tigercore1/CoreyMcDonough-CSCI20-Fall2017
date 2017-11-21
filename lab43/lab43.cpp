@@ -3,7 +3,6 @@
 * This program is a virtual shopping cart/catalogue. It stores items as an array of objects. It has one class that consists of a constructor, mutator, and accessor functions.
 * It displays a list of items and a user can chose which items they'd like to add to their cart. The cart stores all their items and calculates a total price.
 */
-
 #include <iostream>
 #include <math.h>
 #include <string>

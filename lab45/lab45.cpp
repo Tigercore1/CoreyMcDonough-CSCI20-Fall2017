@@ -14,7 +14,6 @@ int main(){
     //INITIALIZE
     string first_name;
     string last_name;
-    
     int i = 0;
     
     cout << "Please enter first name (<=10 chars):" << endl; //first name input
