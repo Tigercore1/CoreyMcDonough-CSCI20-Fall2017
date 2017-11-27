@@ -1,0 +1,25 @@
+/*Created By: Corey McDonough
+* Created On: 11/15/17
+* Assignment 4 Pseudo Code
+*/
+
+"Students" class. This stores all the information for each of the students. (name, multiple choice answers, fill in the blank answers). 
+The class has a get function and multiiple set function. One stores all the information in the class from the file, while the gets take the information into the main.
+
+All the key data is taken from the text file and stored in the main.
+
+Student class/object is reused for each student. All of this is inclosed in a while loop that ends when the file ends.
+Student's name is fout'd.
+A series of if/else statements compares the students' responses to the key. 
+Each if/else also adds and subtracts points onto their total grade. 
+if (response == ?){
+fout << question number;
+}
+else if (response == keyanswer){
+score += 1;
+}
+else {
+fout << question number;
+score -= .25;
+}
+Student's grade is fout'd.
