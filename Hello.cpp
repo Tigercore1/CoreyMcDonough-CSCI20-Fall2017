@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    /*int size = 0;
+    int size = 0;
     
     
     for (int j = 0; j < 3; j++){
@@ -22,15 +22,14 @@ int main()
             cout << array[i] << endl;
         }
     }
-*/
+
 
 string greeting = "Hello";
 cout << (greeting != "hello");
  
  
  
- 
-}
+
  
  
  /*
@@ -69,6 +68,11 @@ declare objects
 open
 use
 close
+
+main.h includes:
+
+
+
 
 
 */
