@@ -3,34 +3,14 @@
 #include <cstdlib>
 #include <string>
 #include <vector>
+#include <iomanip>
 using namespace std;
 
-int main()
-{
-    int size = 0;
-    
-    
-    for (int j = 0; j < 3; j++){
-        cout << "Loop " << j+1 << endl; 
-        cout << "array size: ";
-        cin >> size;
-        vector<int> array(size);
-        for (int i = 0; i < size; i++){
-        cin >> array[i];
-        }
-        for (int i = 0; i < size; i++){
-            cout << array[i] << endl;
-        }
-    }
-
-
-string greeting = "Hello";
-cout << (greeting != "hello");
- 
- 
- 
-
- 
+int main () {
+  double f =334.141592953;
+  cout << setprecision(4) << f << '\n';
+  cout << setprecision(9) << f << '\n';
+}
  
  /*
  Function comments:
