@@ -1,0 +1,32 @@
+goal is to create a class that can fully hold all information for skills and do all calculations for them.
+
+The class can read in file input for xp required for each level, xp for specific actions, and for actions per hour. All of the file data will be read in at the beginning of the program.
+It will all be stored in arrays. This will happen before the main loop of the program.
+
+The class ultimately will have a print that will fout skill name, xp required, actions required, xp per action, and the estimated time. 
+
+The class will have a basic set for skill. SetSkill(name, starting level, desired level).
+It will have a seperate set for xp per hour depending on if the skill xp changes as you level or get different gear.
+
+It will also have sets for the action xp and the actions per hour. This will store the array data into a temporary variable that will be changed once it fouts.
+The sets will get information based on the skill selected and the method chosen. SetActionPerHour(int skill, int method);
+
+The class will also have calculations for xp_per_hour and remaining_xp. Xp per hour will be for skills with static xp rates. It will do this based on xp action and actions per hour.
+CalcRemainingXp will be used for every skill. It will access the arrays storing the experience values and calculate the difference between them.
+
+The main will start with declaring an object skill which will be re-used until the program ends.
+All the fin functions are called. 
+Temporary variables that store inputs are declared.
+
+Now the loop starts. This will end once the user enters '0' at the main output. while(response != 0){
+All temporary variables are set to 0.
+The user can now chose which skill they want to train. (Attack, strength, defence, ranged, prayer, magic, hitpoints). A large number of if else statements is now used depending on what they chose.
+For attack, strength, defence, and ranged, the else parts will be very similar. It will ask for level, level desired, method, and xp per hour.
+It will then run calculations and fout everything using the print function.
+
+The loop will then repeat. For magic and prayer, xp per hour is never asked because it stays the same no matter what level the user is. Instead, these classes calculate the xp per hour
+using the function in the class. It does this based on actions per hour and xp per action.
+
+Hitpoints is nearly the same as attack, strength, etc... however, hitpoints yields less xp for action in everything.
+
+Once the user enters 0, the loop will end. The fout file will close.
